@@ -1,22 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OnboardLab — Client Onboarding for Agencies</title>
-<style>
-  body { font-family: Arial; text-align:center; margin:0; padding:0; background:#f9f9f9; }
-  header { padding:100px 20px; background:#4F46E5; color:white; }
-  h1 { font-size:2.5em; }
-  p { font-size:1.2em; margin-bottom:30px; }
-  a.button { background:#FF5722; color:white; padding:15px 30px; border-radius:5px; text-decoration:none; font-weight:bold; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnboardLab — Coming Soon</title>
+  <style>
+    /* Colors from Option 1 */
+    :root {
+      --primary: #4F46E5;   /* Indigo */
+      --accent: #FF5722;    /* Bright Orange */
+      --background: #F9F9F9;/* Light Gray */
+      --text: #111827;      /* Dark Gray */
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0 0 20px 0;
+    }
+
+    header p {
+      font-size: 1.5em;
+      margin: 0 0 40px 0;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: var(--accent);
+      color: white;
+      padding: 15px 35px;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #E64A19; /* Slightly darker orange on hover */
+    }
+
+    section {
+      flex: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #E5E7EB;
+      font-size: 0.9em;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+      header p {
+        font-size: 1.2em;
+      }
+      .button {
+        padding: 12px 25px;
+        font-size: 1em;
+      }
+      section h2 {
+        font-size: 1.5em;
+      }
+      li {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
+
 <header>
-<h1>OnboardLab</h1>
-<p>Client onboarding for modern agencies</p>
-<a href="#" class="button">Join Early Access</a>
+  <h1>OnboardLab</h1>
+  <p>Your onboarding, reimagined.</p>
+  <a href="#" class="button">Join Early Access</a>
 </header>
+
+<section>
+  <h2>Why OnboardLab?</h2>
+  <ul>
+    <li>Guided onboarding flows for every client</li>
+    <li>Visual progress tracker to delight clients</li>
+    <li>Streamline first interactions and reduce friction</li>
+  </ul>
+</section>
+
+<footer>
+  Built with ❤️ in Canada
+</footer>
+
 </body>
 </html>
